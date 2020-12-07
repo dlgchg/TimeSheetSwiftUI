@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  TimeSheet
+
+  Created by 李伟 on 2020/11/25.
+  
+*/
+
+"CFBundleDisplayName" = "TimeSheet";
+"feedback" = "Feedback";

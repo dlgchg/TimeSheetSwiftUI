@@ -7,41 +7,413 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D02548F3256F5F30002050A0 /* CoreDataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02548F2256F5F30002050A0 /* CoreDataUtil.swift */; };
+		D02548F6256F67E5002050A0 /* AllOverDueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02548F5256F67E5002050A0 /* AllOverDueView.swift */; };
+		D02548F9256F7061002050A0 /* AllOverDueNoEndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02548F8256F7061002050A0 /* AllOverDueNoEndView.swift */; };
+		D02548FC256F7338002050A0 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02548FB256F7338002050A0 /* MailView.swift */; };
+		D02548FF256F7AD4002050A0 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02548FE256F7AD4002050A0 /* BackgroundView.swift */; };
+		D0254907256F8019002050A0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0254906256F8019002050A0 /* WidgetKit.framework */; };
+		D0254909256F8019002050A0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0254908256F8019002050A0 /* SwiftUI.framework */; };
+		D025490C256F8019002050A0 /* TimeSheetTodoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025490B256F8019002050A0 /* TimeSheetTodoWidget.swift */; };
+		D025490E256F801B002050A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D025490D256F801B002050A0 /* Assets.xcassets */; };
+		D0254912256F801B002050A0 /* TimeSheetTodoWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D0254905256F8019002050A0 /* TimeSheetTodoWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D025491E256F8033002050A0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0254906256F8019002050A0 /* WidgetKit.framework */; };
+		D025491F256F8033002050A0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0254908256F8019002050A0 /* SwiftUI.framework */; };
+		D0254922256F8033002050A0 /* TimeSheetScheduleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0254921256F8033002050A0 /* TimeSheetScheduleWidget.swift */; };
+		D0254924256F8033002050A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0254923256F8033002050A0 /* Assets.xcassets */; };
+		D0254928256F8033002050A0 /* TimeSheetScheduleWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D025491D256F8033002050A0 /* TimeSheetScheduleWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D025492F256F8041002050A0 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05DB361256E44F30005D843 /* Extension.swift */; };
+		D0254933256F8041002050A0 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05DB361256E44F30005D843 /* Extension.swift */; };
+		D0254934256F8045002050A0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D045EBA2256D3490002822F1 /* Persistence.swift */; };
+		D0254938256F8045002050A0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D045EBA2256D3490002822F1 /* Persistence.swift */; };
+		D0254941256F81CD002050A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D045EB9D256D3490002822F1 /* Assets.xcassets */; };
+		D0254945256F81CD002050A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D045EB9D256D3490002822F1 /* Assets.xcassets */; };
+		D026788C25709A9F00A813EC /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D026788B25709A9F00A813EC /* Utils.swift */; };
+		D02678AD25709D4900A813EC /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D026788B25709A9F00A813EC /* Utils.swift */; };
+		D02678B125709D4A00A813EC /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D026788B25709A9F00A813EC /* Utils.swift */; };
 		D045EB9A256D348F002822F1 /* TimeSheetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D045EB99256D348F002822F1 /* TimeSheetApp.swift */; };
 		D045EB9C256D348F002822F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D045EB9B256D348F002822F1 /* ContentView.swift */; };
 		D045EB9E256D3490002822F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D045EB9D256D3490002822F1 /* Assets.xcassets */; };
 		D045EBA1256D3490002822F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D045EBA0256D3490002822F1 /* Preview Assets.xcassets */; };
 		D045EBA3256D3490002822F1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D045EBA2256D3490002822F1 /* Persistence.swift */; };
-		D045EBA6256D3490002822F1 /* TimeSheet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D045EBA4256D3490002822F1 /* TimeSheet.xcdatamodeld */; };
+		D045EBB2256D3567002822F1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D045EBB1256D3567002822F1 /* StoreKit.framework */; };
+		D045EBB4256D3574002822F1 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D045EBB3256D3574002822F1 /* CloudKit.framework */; };
+		D045EBB7256D37C9002822F1 /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D045EBB6256D37C9002822F1 /* NavigationBarModifier.swift */; };
+		D045EBBA256D3DD9002822F1 /* DayTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D045EBB9256D3DD9002822F1 /* DayTodoView.swift */; };
+		D045EBBD256D486E002822F1 /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D045EBBC256D486E002822F1 /* ToDoView.swift */; };
+		D045EBC0256D49CE002822F1 /* GearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D045EBBF256D49CE002822F1 /* GearView.swift */; };
+		D04BBD8F256FE713008B7037 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04BBD8E256FE713008B7037 /* TagView.swift */; };
+		D04BBD94256FE729008B7037 /* TodoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04BBD93256FE729008B7037 /* TodoItemView.swift */; };
+		D0520EF6256E87D200459B97 /* RepeatTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0520EF5256E87D200459B97 /* RepeatTodoView.swift */; };
+		D0520EF9256E8CE700459B97 /* NewRepeatTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0520EF8256E8CE700459B97 /* NewRepeatTodoView.swift */; };
+		D05DB34F256E36D80005D843 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D05DB351256E36D80005D843 /* Localizable.strings */; };
+		D05DB35B256E3B350005D843 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D05DB35D256E3B350005D843 /* InfoPlist.strings */; };
+		D05DB362256E44F30005D843 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05DB361256E44F30005D843 /* Extension.swift */; };
+		D05DB365256E45420005D843 /* DateAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05DB364256E45420005D843 /* DateAlertView.swift */; };
+		D05DB368256E45560005D843 /* TimeAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05DB367256E45560005D843 /* TimeAlertView.swift */; };
+		D05DB36B256E523F0005D843 /* AllTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05DB36A256E523F0005D843 /* AllTodoView.swift */; };
+		D05DB36E256E59590005D843 /* AllScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05DB36D256E59590005D843 /* AllScheduleView.swift */; };
+		D05DB371256E5AAD0005D843 /* AllRecycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05DB370256E5AAD0005D843 /* AllRecycleView.swift */; };
+		D05DB374256E5B5E0005D843 /* AllRepeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05DB373256E5B5E0005D843 /* AllRepeatView.swift */; };
+		D05DB377256E5C7A0005D843 /* RecycleTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05DB376256E5C7A0005D843 /* RecycleTodoView.swift */; };
+		D068EA9A256E07550041C3CE /* NewTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D068EA99256E07550041C3CE /* NewTodoView.swift */; };
+		D0782AFC2578BF84007A92CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0782AFB2578BF84007A92CB /* LaunchScreen.storyboard */; };
+		D0782B192578C298007A92CB /* EditTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0782B182578C298007A92CB /* EditTodoView.swift */; };
+		D0782B202578C670007A92CB /* EditRepeatTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0782B1F2578C670007A92CB /* EditRepeatTodoView.swift */; };
+		D09636E2257247F0007310CE /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D045EBB3256D3574002822F1 /* CloudKit.framework */; };
+		D09636E3257247F2007310CE /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D045EBB3256D3574002822F1 /* CloudKit.framework */; };
+		D09636F5257248FF007310CE /* TimeSheet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D09636F3257248FE007310CE /* TimeSheet.xcdatamodeld */; };
+		D09636F925732EDE007310CE /* TimeSheet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D09636F3257248FE007310CE /* TimeSheet.xcdatamodeld */; };
+		D09636FD25732EDE007310CE /* TimeSheet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D09636F3257248FE007310CE /* TimeSheet.xcdatamodeld */; };
+		D096371B257333F4007310CE /* 默认.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0963705257333F4007310CE /* 默认.mp3 */; };
+		D096371C257333F4007310CE /* 默认.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0963705257333F4007310CE /* 默认.mp3 */; };
+		D096371D257333F5007310CE /* 默认.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0963705257333F4007310CE /* 默认.mp3 */; };
+		D0963721257333F5007310CE /* pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0963707257333F4007310CE /* pop.mp3 */; };
+		D0963722257333F5007310CE /* pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0963707257333F4007310CE /* pop.mp3 */; };
+		D0963723257333F5007310CE /* pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0963707257333F4007310CE /* pop.mp3 */; };
+		D0963724257333F5007310CE /* 叮玲玲2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0963708257333F4007310CE /* 叮玲玲2.mp3 */; };
+		D0963725257333F5007310CE /* 叮玲玲2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0963708257333F4007310CE /* 叮玲玲2.mp3 */; };
+		D0963726257333F5007310CE /* 叮玲玲2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0963708257333F4007310CE /* 叮玲玲2.mp3 */; };
+		D0963727257333F5007310CE /* xixu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0963709257333F4007310CE /* xixu.mp3 */; };
+		D0963728257333F5007310CE /* xixu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0963709257333F4007310CE /* xixu.mp3 */; };
+		D0963729257333F5007310CE /* xixu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0963709257333F4007310CE /* xixu.mp3 */; };
+		D096372A257333F5007310CE /* 键盘.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096370A257333F4007310CE /* 键盘.mp3 */; };
+		D096372B257333F5007310CE /* 键盘.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096370A257333F4007310CE /* 键盘.mp3 */; };
+		D096372C257333F5007310CE /* 键盘.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096370A257333F4007310CE /* 键盘.mp3 */; };
+		D096372D257333F5007310CE /* 生日快乐.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096370B257333F4007310CE /* 生日快乐.mp3 */; };
+		D096372E257333F5007310CE /* 生日快乐.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096370B257333F4007310CE /* 生日快乐.mp3 */; };
+		D096372F257333F5007310CE /* 生日快乐.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096370B257333F4007310CE /* 生日快乐.mp3 */; };
+		D0963730257333F5007310CE /* 响指.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096370C257333F4007310CE /* 响指.mp3 */; };
+		D0963731257333F5007310CE /* 响指.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096370C257333F4007310CE /* 响指.mp3 */; };
+		D0963732257333F5007310CE /* 响指.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096370C257333F4007310CE /* 响指.mp3 */; };
+		D0963733257333F5007310CE /* 叮玲玲.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096370D257333F4007310CE /* 叮玲玲.mp3 */; };
+		D0963734257333F5007310CE /* 叮玲玲.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096370D257333F4007310CE /* 叮玲玲.mp3 */; };
+		D0963735257333F5007310CE /* 叮玲玲.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096370D257333F4007310CE /* 叮玲玲.mp3 */; };
+		D0963736257333F5007310CE /* 猫叫.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096370E257333F4007310CE /* 猫叫.mp3 */; };
+		D0963737257333F5007310CE /* 猫叫.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096370E257333F4007310CE /* 猫叫.mp3 */; };
+		D0963738257333F5007310CE /* 猫叫.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096370E257333F4007310CE /* 猫叫.mp3 */; };
+		D0963739257333F5007310CE /* 完成.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096370F257333F4007310CE /* 完成.mp3 */; };
+		D096373A257333F5007310CE /* 完成.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096370F257333F4007310CE /* 完成.mp3 */; };
+		D096373B257333F5007310CE /* 完成.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096370F257333F4007310CE /* 完成.mp3 */; };
+		D096373F257333F5007310CE /* 打卡.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0963711257333F4007310CE /* 打卡.mp3 */; };
+		D0963740257333F5007310CE /* 打卡.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0963711257333F4007310CE /* 打卡.mp3 */; };
+		D0963741257333F5007310CE /* 打卡.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0963711257333F4007310CE /* 打卡.mp3 */; };
+		D0963742257333F5007310CE /* 狗叫.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0963712257333F4007310CE /* 狗叫.mp3 */; };
+		D0963743257333F5007310CE /* 狗叫.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0963712257333F4007310CE /* 狗叫.mp3 */; };
+		D0963744257333F5007310CE /* 狗叫.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0963712257333F4007310CE /* 狗叫.mp3 */; };
+		D0963748257333F5007310CE /* open2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0963714257333F4007310CE /* open2.mp3 */; };
+		D0963749257333F5007310CE /* open2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0963714257333F4007310CE /* open2.mp3 */; };
+		D096374A257333F5007310CE /* open2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0963714257333F4007310CE /* open2.mp3 */; };
+		D096374E257333F5007310CE /* open1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0963716257333F4007310CE /* open1.mp3 */; };
+		D096374F257333F5007310CE /* open1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0963716257333F4007310CE /* open1.mp3 */; };
+		D0963750257333F5007310CE /* open1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0963716257333F4007310CE /* open1.mp3 */; };
+		D096375D257335EB007310CE /* 胜利.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096375A257335EA007310CE /* 胜利.mp3 */; };
+		D096375E257335EB007310CE /* 胜利.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096375A257335EA007310CE /* 胜利.mp3 */; };
+		D096375F257335EB007310CE /* 胜利.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096375A257335EA007310CE /* 胜利.mp3 */; };
+		D0963760257335EB007310CE /* 弹簧.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096375B257335EA007310CE /* 弹簧.mp3 */; };
+		D0963761257335EB007310CE /* 弹簧.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096375B257335EA007310CE /* 弹簧.mp3 */; };
+		D0963762257335EB007310CE /* 弹簧.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096375B257335EA007310CE /* 弹簧.mp3 */; };
+		D0963763257335EB007310CE /* 乌鸦.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096375C257335EB007310CE /* 乌鸦.mp3 */; };
+		D0963764257335EB007310CE /* 乌鸦.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096375C257335EB007310CE /* 乌鸦.mp3 */; };
+		D0963765257335EB007310CE /* 乌鸦.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D096375C257335EB007310CE /* 乌鸦.mp3 */; };
+		D096376A257336E0007310CE /* 电吉他.caf in Resources */ = {isa = PBXBuildFile; fileRef = D0963769257336E0007310CE /* 电吉他.caf */; };
+		D096376B257336E0007310CE /* 电吉他.caf in Resources */ = {isa = PBXBuildFile; fileRef = D0963769257336E0007310CE /* 电吉他.caf */; };
+		D096376C257336E0007310CE /* 电吉他.caf in Resources */ = {isa = PBXBuildFile; fileRef = D0963769257336E0007310CE /* 电吉他.caf */; };
+		D0963775257338A5007310CE /* 起床.caf in Resources */ = {isa = PBXBuildFile; fileRef = D0963770257338A5007310CE /* 起床.caf */; };
+		D0963776257338A5007310CE /* 起床.caf in Resources */ = {isa = PBXBuildFile; fileRef = D0963770257338A5007310CE /* 起床.caf */; };
+		D0963777257338A5007310CE /* 起床.caf in Resources */ = {isa = PBXBuildFile; fileRef = D0963770257338A5007310CE /* 起床.caf */; };
+		D0963778257338A5007310CE /* 钢琴.caf in Resources */ = {isa = PBXBuildFile; fileRef = D0963771257338A5007310CE /* 钢琴.caf */; };
+		D0963779257338A5007310CE /* 钢琴.caf in Resources */ = {isa = PBXBuildFile; fileRef = D0963771257338A5007310CE /* 钢琴.caf */; };
+		D096377A257338A5007310CE /* 钢琴.caf in Resources */ = {isa = PBXBuildFile; fileRef = D0963771257338A5007310CE /* 钢琴.caf */; };
+		D096377B257338A5007310CE /* 幻想.caf in Resources */ = {isa = PBXBuildFile; fileRef = D0963772257338A5007310CE /* 幻想.caf */; };
+		D096377C257338A5007310CE /* 幻想.caf in Resources */ = {isa = PBXBuildFile; fileRef = D0963772257338A5007310CE /* 幻想.caf */; };
+		D096377D257338A5007310CE /* 幻想.caf in Resources */ = {isa = PBXBuildFile; fileRef = D0963772257338A5007310CE /* 幻想.caf */; };
+		D096377E257338A5007310CE /* 爵士.caf in Resources */ = {isa = PBXBuildFile; fileRef = D0963773257338A5007310CE /* 爵士.caf */; };
+		D096377F257338A5007310CE /* 爵士.caf in Resources */ = {isa = PBXBuildFile; fileRef = D0963773257338A5007310CE /* 爵士.caf */; };
+		D0963780257338A5007310CE /* 爵士.caf in Resources */ = {isa = PBXBuildFile; fileRef = D0963773257338A5007310CE /* 爵士.caf */; };
+		D0963781257338A5007310CE /* 欢快.caf in Resources */ = {isa = PBXBuildFile; fileRef = D0963774257338A5007310CE /* 欢快.caf */; };
+		D0963782257338A5007310CE /* 欢快.caf in Resources */ = {isa = PBXBuildFile; fileRef = D0963774257338A5007310CE /* 欢快.caf */; };
+		D0963783257338A5007310CE /* 欢快.caf in Resources */ = {isa = PBXBuildFile; fileRef = D0963774257338A5007310CE /* 欢快.caf */; };
+		D0ED9C262574A22C00C45EBE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0254906256F8019002050A0 /* WidgetKit.framework */; };
+		D0ED9C272574A22C00C45EBE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0254908256F8019002050A0 /* SwiftUI.framework */; };
+		D0ED9C2A2574A22C00C45EBE /* TimeSheetTomorrowWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED9C292574A22C00C45EBE /* TimeSheetTomorrowWidget.swift */; };
+		D0ED9C2C2574A22E00C45EBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0ED9C2B2574A22E00C45EBE /* Assets.xcassets */; };
+		D0ED9C302574A22E00C45EBE /* TimeSheetTomorrowWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D0ED9C252574A22C00C45EBE /* TimeSheetTomorrowWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D0ED9C392574A24E00C45EBE /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D045EBB3256D3574002822F1 /* CloudKit.framework */; };
+		D0ED9C3A2574A26A00C45EBE /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05DB361256E44F30005D843 /* Extension.swift */; };
+		D0ED9C3F2574A26C00C45EBE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D026788B25709A9F00A813EC /* Utils.swift */; };
+		D0ED9C442574A27200C45EBE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D045EBA2256D3490002822F1 /* Persistence.swift */; };
+		D0ED9C492574A27500C45EBE /* TimeSheet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D09636F3257248FE007310CE /* TimeSheet.xcdatamodeld */; };
+		D0ED9C4E2574A27C00C45EBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D045EB9D256D3490002822F1 /* Assets.xcassets */; };
+		D0ED9C542574C68900C45EBE /* LunarAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED9C532574C68900C45EBE /* LunarAlertView.swift */; };
+		D0ED9C5E2574DCC000C45EBE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0254906256F8019002050A0 /* WidgetKit.framework */; };
+		D0ED9C5F2574DCC000C45EBE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0254908256F8019002050A0 /* SwiftUI.framework */; };
+		D0ED9C622574DCC000C45EBE /* TimeSheetBirthdayWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED9C612574DCC000C45EBE /* TimeSheetBirthdayWidget.swift */; };
+		D0ED9C642574DCC100C45EBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0ED9C632574DCC100C45EBE /* Assets.xcassets */; };
+		D0ED9C682574DCC100C45EBE /* TimeSheetBirthdayWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D0ED9C5D2574DCC000C45EBE /* TimeSheetBirthdayWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D0ED9C712574DCD100C45EBE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D026788B25709A9F00A813EC /* Utils.swift */; };
+		D0ED9C772574DCD400C45EBE /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05DB361256E44F30005D843 /* Extension.swift */; };
+		D0ED9C7D2574DCDC00C45EBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D045EB9D256D3490002822F1 /* Assets.xcassets */; };
+		D0ED9C832574DCDE00C45EBE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D045EBA2256D3490002822F1 /* Persistence.swift */; };
+		D0ED9C892574DD2500C45EBE /* TimeSheet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D09636F3257248FE007310CE /* TimeSheet.xcdatamodeld */; };
+		D0ED9C952574DE7100C45EBE /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D045EBB3256D3574002822F1 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D0254910256F801B002050A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D045EB8E256D348F002822F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0254904256F8019002050A0;
+			remoteInfo = TimeSheetTodoWidgetExtension;
+		};
+		D0254926256F8033002050A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D045EB8E256D348F002822F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D025491C256F8033002050A0;
+			remoteInfo = TimeSheetScheduleWidgetExtension;
+		};
+		D0ED9C2E2574A22E00C45EBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D045EB8E256D348F002822F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0ED9C242574A22C00C45EBE;
+			remoteInfo = TimeSheetTomorrowWidgetExtension;
+		};
+		D0ED9C662574DCC100C45EBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D045EB8E256D348F002822F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0ED9C5C2574DCC000C45EBE;
+			remoteInfo = TimeSheetBirthdayWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0254916256F801C002050A0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D0254928256F8033002050A0 /* TimeSheetScheduleWidgetExtension.appex in Embed App Extensions */,
+				D0254912256F801B002050A0 /* TimeSheetTodoWidgetExtension.appex in Embed App Extensions */,
+				D0ED9C682574DCC100C45EBE /* TimeSheetBirthdayWidgetExtension.appex in Embed App Extensions */,
+				D0ED9C302574A22E00C45EBE /* TimeSheetTomorrowWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D02548F2256F5F30002050A0 /* CoreDataUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataUtil.swift; sourceTree = "<group>"; };
+		D02548F5256F67E5002050A0 /* AllOverDueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllOverDueView.swift; sourceTree = "<group>"; };
+		D02548F8256F7061002050A0 /* AllOverDueNoEndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllOverDueNoEndView.swift; sourceTree = "<group>"; };
+		D02548FB256F7338002050A0 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
+		D02548FE256F7AD4002050A0 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		D0254905256F8019002050A0 /* TimeSheetTodoWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TimeSheetTodoWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0254906256F8019002050A0 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D0254908256F8019002050A0 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D025490B256F8019002050A0 /* TimeSheetTodoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSheetTodoWidget.swift; sourceTree = "<group>"; };
+		D025490D256F801B002050A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D025490F256F801B002050A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D025491D256F8033002050A0 /* TimeSheetScheduleWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TimeSheetScheduleWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0254921256F8033002050A0 /* TimeSheetScheduleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSheetScheduleWidget.swift; sourceTree = "<group>"; };
+		D0254923256F8033002050A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0254925256F8033002050A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0254949256F86FA002050A0 /* TimeSheetTodoWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeSheetTodoWidgetExtension.entitlements; sourceTree = "<group>"; };
+		D025494D256F86FF002050A0 /* TimeSheetScheduleWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeSheetScheduleWidgetExtension.entitlements; sourceTree = "<group>"; };
+		D026788B25709A9F00A813EC /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		D045EB96256D348F002822F1 /* TimeSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D045EB99256D348F002822F1 /* TimeSheetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSheetApp.swift; sourceTree = "<group>"; };
 		D045EB9B256D348F002822F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D045EB9D256D3490002822F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D045EBA0256D3490002822F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D045EBA2256D3490002822F1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		D045EBA5256D3490002822F1 /* TimeSheet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimeSheet.xcdatamodel; sourceTree = "<group>"; };
 		D045EBA7256D3490002822F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D045EBAE256D3555002822F1 /* TimeSheet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeSheet.entitlements; sourceTree = "<group>"; };
+		D045EBB1256D3567002822F1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		D045EBB3256D3574002822F1 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		D045EBB6256D37C9002822F1 /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
+		D045EBB9256D3DD9002822F1 /* DayTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTodoView.swift; sourceTree = "<group>"; };
+		D045EBBC256D486E002822F1 /* ToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoView.swift; sourceTree = "<group>"; };
+		D045EBBF256D49CE002822F1 /* GearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearView.swift; sourceTree = "<group>"; };
+		D04BBD8E256FE713008B7037 /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		D04BBD93256FE729008B7037 /* TodoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemView.swift; sourceTree = "<group>"; };
+		D0520EF5256E87D200459B97 /* RepeatTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatTodoView.swift; sourceTree = "<group>"; };
+		D0520EF8256E8CE700459B97 /* NewRepeatTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRepeatTodoView.swift; sourceTree = "<group>"; };
+		D05DB350256E36D80005D843 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D05DB353256E36DB0005D843 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D05DB35C256E3B350005D843 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D05DB35F256E3B380005D843 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		D05DB361256E44F30005D843 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		D05DB364256E45420005D843 /* DateAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAlertView.swift; sourceTree = "<group>"; };
+		D05DB367256E45560005D843 /* TimeAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAlertView.swift; sourceTree = "<group>"; };
+		D05DB36A256E523F0005D843 /* AllTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTodoView.swift; sourceTree = "<group>"; };
+		D05DB36D256E59590005D843 /* AllScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllScheduleView.swift; sourceTree = "<group>"; };
+		D05DB370256E5AAD0005D843 /* AllRecycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRecycleView.swift; sourceTree = "<group>"; };
+		D05DB373256E5B5E0005D843 /* AllRepeatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRepeatView.swift; sourceTree = "<group>"; };
+		D05DB376256E5C7A0005D843 /* RecycleTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleTodoView.swift; sourceTree = "<group>"; };
+		D068EA99256E07550041C3CE /* NewTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTodoView.swift; sourceTree = "<group>"; };
+		D0782AFB2578BF84007A92CB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0782B182578C298007A92CB /* EditTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTodoView.swift; sourceTree = "<group>"; };
+		D0782B1F2578C670007A92CB /* EditRepeatTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRepeatTodoView.swift; sourceTree = "<group>"; };
+		D09636F4257248FE007310CE /* TimeSheet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimeSheet.xcdatamodel; sourceTree = "<group>"; };
+		D0963705257333F4007310CE /* 默认.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "默认.mp3"; sourceTree = "<group>"; };
+		D0963707257333F4007310CE /* pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pop.mp3; sourceTree = "<group>"; };
+		D0963708257333F4007310CE /* 叮玲玲2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "叮玲玲2.mp3"; sourceTree = "<group>"; };
+		D0963709257333F4007310CE /* xixu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = xixu.mp3; sourceTree = "<group>"; };
+		D096370A257333F4007310CE /* 键盘.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "键盘.mp3"; sourceTree = "<group>"; };
+		D096370B257333F4007310CE /* 生日快乐.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "生日快乐.mp3"; sourceTree = "<group>"; };
+		D096370C257333F4007310CE /* 响指.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "响指.mp3"; sourceTree = "<group>"; };
+		D096370D257333F4007310CE /* 叮玲玲.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "叮玲玲.mp3"; sourceTree = "<group>"; };
+		D096370E257333F4007310CE /* 猫叫.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "猫叫.mp3"; sourceTree = "<group>"; };
+		D096370F257333F4007310CE /* 完成.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "完成.mp3"; sourceTree = "<group>"; };
+		D0963711257333F4007310CE /* 打卡.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "打卡.mp3"; sourceTree = "<group>"; };
+		D0963712257333F4007310CE /* 狗叫.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "狗叫.mp3"; sourceTree = "<group>"; };
+		D0963714257333F4007310CE /* open2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = open2.mp3; sourceTree = "<group>"; };
+		D0963716257333F4007310CE /* open1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = open1.mp3; sourceTree = "<group>"; };
+		D096375A257335EA007310CE /* 胜利.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "胜利.mp3"; sourceTree = "<group>"; };
+		D096375B257335EA007310CE /* 弹簧.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "弹簧.mp3"; sourceTree = "<group>"; };
+		D096375C257335EB007310CE /* 乌鸦.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "乌鸦.mp3"; sourceTree = "<group>"; };
+		D0963769257336E0007310CE /* 电吉他.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "电吉他.caf"; sourceTree = "<group>"; };
+		D0963770257338A5007310CE /* 起床.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "起床.caf"; sourceTree = "<group>"; };
+		D0963771257338A5007310CE /* 钢琴.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "钢琴.caf"; sourceTree = "<group>"; };
+		D0963772257338A5007310CE /* 幻想.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "幻想.caf"; sourceTree = "<group>"; };
+		D0963773257338A5007310CE /* 爵士.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "爵士.caf"; sourceTree = "<group>"; };
+		D0963774257338A5007310CE /* 欢快.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "欢快.caf"; sourceTree = "<group>"; };
+		D0ED9C252574A22C00C45EBE /* TimeSheetTomorrowWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TimeSheetTomorrowWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0ED9C292574A22C00C45EBE /* TimeSheetTomorrowWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSheetTomorrowWidget.swift; sourceTree = "<group>"; };
+		D0ED9C2B2574A22E00C45EBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0ED9C2D2574A22E00C45EBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0ED9C382574A23D00C45EBE /* TimeSheetTomorrowWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeSheetTomorrowWidgetExtension.entitlements; sourceTree = "<group>"; };
+		D0ED9C532574C68900C45EBE /* LunarAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunarAlertView.swift; sourceTree = "<group>"; };
+		D0ED9C5D2574DCC000C45EBE /* TimeSheetBirthdayWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TimeSheetBirthdayWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0ED9C612574DCC000C45EBE /* TimeSheetBirthdayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSheetBirthdayWidget.swift; sourceTree = "<group>"; };
+		D0ED9C632574DCC100C45EBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0ED9C652574DCC100C45EBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0ED9C8F2574DE6700C45EBE /* TimeSheetBirthdayWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeSheetBirthdayWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D0254902256F8019002050A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D09636E2257247F0007310CE /* CloudKit.framework in Frameworks */,
+				D0254909256F8019002050A0 /* SwiftUI.framework in Frameworks */,
+				D0254907256F8019002050A0 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D025491A256F8033002050A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D09636E3257247F2007310CE /* CloudKit.framework in Frameworks */,
+				D025491F256F8033002050A0 /* SwiftUI.framework in Frameworks */,
+				D025491E256F8033002050A0 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D045EB93256D348F002822F1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D045EBB2256D3567002822F1 /* StoreKit.framework in Frameworks */,
+				D045EBB4256D3574002822F1 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0ED9C222574A22C00C45EBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0ED9C392574A24E00C45EBE /* CloudKit.framework in Frameworks */,
+				D0ED9C272574A22C00C45EBE /* SwiftUI.framework in Frameworks */,
+				D0ED9C262574A22C00C45EBE /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0ED9C5A2574DCC000C45EBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0ED9C952574DE7100C45EBE /* CloudKit.framework in Frameworks */,
+				D0ED9C5F2574DCC000C45EBE /* SwiftUI.framework in Frameworks */,
+				D0ED9C5E2574DCC000C45EBE /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D025490A256F8019002050A0 /* TimeSheetTodoWidget */ = {
+			isa = PBXGroup;
+			children = (
+				D025490B256F8019002050A0 /* TimeSheetTodoWidget.swift */,
+				D025490D256F801B002050A0 /* Assets.xcassets */,
+				D025490F256F801B002050A0 /* Info.plist */,
+			);
+			path = TimeSheetTodoWidget;
+			sourceTree = "<group>";
+		};
+		D0254920256F8033002050A0 /* TimeSheetScheduleWidget */ = {
+			isa = PBXGroup;
+			children = (
+				D0254921256F8033002050A0 /* TimeSheetScheduleWidget.swift */,
+				D0254923256F8033002050A0 /* Assets.xcassets */,
+				D0254925256F8033002050A0 /* Info.plist */,
+			);
+			path = TimeSheetScheduleWidget;
+			sourceTree = "<group>";
+		};
+		D026788425709A5E00A813EC /* mp3 */ = {
+			isa = PBXGroup;
+			children = (
+				D0963769257336E0007310CE /* 电吉他.caf */,
+				D0963771257338A5007310CE /* 钢琴.caf */,
+				D0963774257338A5007310CE /* 欢快.caf */,
+				D0963772257338A5007310CE /* 幻想.caf */,
+				D0963773257338A5007310CE /* 爵士.caf */,
+				D0963770257338A5007310CE /* 起床.caf */,
+				D0963711257333F4007310CE /* 打卡.mp3 */,
+				D096370D257333F4007310CE /* 叮玲玲.mp3 */,
+				D0963708257333F4007310CE /* 叮玲玲2.mp3 */,
+				D0963712257333F4007310CE /* 狗叫.mp3 */,
+				D096370A257333F4007310CE /* 键盘.mp3 */,
+				D096375B257335EA007310CE /* 弹簧.mp3 */,
+				D096375A257335EA007310CE /* 胜利.mp3 */,
+				D096375C257335EB007310CE /* 乌鸦.mp3 */,
+				D096370E257333F4007310CE /* 猫叫.mp3 */,
+				D0963705257333F4007310CE /* 默认.mp3 */,
+				D096370B257333F4007310CE /* 生日快乐.mp3 */,
+				D096370F257333F4007310CE /* 完成.mp3 */,
+				D096370C257333F4007310CE /* 响指.mp3 */,
+				D0963716257333F4007310CE /* open1.mp3 */,
+				D0963714257333F4007310CE /* open2.mp3 */,
+				D0963707257333F4007310CE /* pop.mp3 */,
+				D0963709257333F4007310CE /* xixu.mp3 */,
+			);
+			path = mp3;
+			sourceTree = "<group>";
+		};
 		D045EB8D256D348F002822F1 = {
 			isa = PBXGroup;
 			children = (
+				D0ED9C8F2574DE6700C45EBE /* TimeSheetBirthdayWidgetExtension.entitlements */,
+				D0ED9C382574A23D00C45EBE /* TimeSheetTomorrowWidgetExtension.entitlements */,
+				D025494D256F86FF002050A0 /* TimeSheetScheduleWidgetExtension.entitlements */,
+				D0254949256F86FA002050A0 /* TimeSheetTodoWidgetExtension.entitlements */,
 				D045EB98256D348F002822F1 /* TimeSheet */,
+				D025490A256F8019002050A0 /* TimeSheetTodoWidget */,
+				D0254920256F8033002050A0 /* TimeSheetScheduleWidget */,
+				D0ED9C282574A22C00C45EBE /* TimeSheetTomorrowWidget */,
+				D0ED9C602574DCC000C45EBE /* TimeSheetBirthdayWidget */,
 				D045EB97256D348F002822F1 /* Products */,
+				D045EBB0256D3567002822F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +421,10 @@
 			isa = PBXGroup;
 			children = (
 				D045EB96256D348F002822F1 /* TimeSheet.app */,
+				D0254905256F8019002050A0 /* TimeSheetTodoWidgetExtension.appex */,
+				D025491D256F8033002050A0 /* TimeSheetScheduleWidgetExtension.appex */,
+				D0ED9C252574A22C00C45EBE /* TimeSheetTomorrowWidgetExtension.appex */,
+				D0ED9C5D2574DCC000C45EBE /* TimeSheetBirthdayWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,13 +432,44 @@
 		D045EB98256D348F002822F1 /* TimeSheet */ = {
 			isa = PBXGroup;
 			children = (
+				D05DB354256E370A0005D843 /* assets */,
+				D045EBAE256D3555002822F1 /* TimeSheet.entitlements */,
+				D05DB361256E44F30005D843 /* Extension.swift */,
+				D026788B25709A9F00A813EC /* Utils.swift */,
+				D02548F2256F5F30002050A0 /* CoreDataUtil.swift */,
 				D045EB99256D348F002822F1 /* TimeSheetApp.swift */,
 				D045EB9B256D348F002822F1 /* ContentView.swift */,
+				D045EBBC256D486E002822F1 /* ToDoView.swift */,
+				D05DB376256E5C7A0005D843 /* RecycleTodoView.swift */,
+				D045EBB9256D3DD9002822F1 /* DayTodoView.swift */,
+				D04BBD93256FE729008B7037 /* TodoItemView.swift */,
+				D04BBD8E256FE713008B7037 /* TagView.swift */,
+				D0520EF5256E87D200459B97 /* RepeatTodoView.swift */,
+				D045EBB6256D37C9002822F1 /* NavigationBarModifier.swift */,
+				D045EBBF256D49CE002822F1 /* GearView.swift */,
+				D02548FE256F7AD4002050A0 /* BackgroundView.swift */,
+				D068EA99256E07550041C3CE /* NewTodoView.swift */,
+				D0782B182578C298007A92CB /* EditTodoView.swift */,
+				D0520EF8256E8CE700459B97 /* NewRepeatTodoView.swift */,
+				D0782B1F2578C670007A92CB /* EditRepeatTodoView.swift */,
+				D05DB367256E45560005D843 /* TimeAlertView.swift */,
+				D05DB364256E45420005D843 /* DateAlertView.swift */,
+				D0ED9C532574C68900C45EBE /* LunarAlertView.swift */,
+				D05DB36A256E523F0005D843 /* AllTodoView.swift */,
+				D05DB36D256E59590005D843 /* AllScheduleView.swift */,
+				D05DB370256E5AAD0005D843 /* AllRecycleView.swift */,
+				D05DB373256E5B5E0005D843 /* AllRepeatView.swift */,
+				D02548F5256F67E5002050A0 /* AllOverDueView.swift */,
+				D02548F8256F7061002050A0 /* AllOverDueNoEndView.swift */,
+				D02548FB256F7338002050A0 /* MailView.swift */,
 				D045EB9D256D3490002822F1 /* Assets.xcassets */,
 				D045EBA2256D3490002822F1 /* Persistence.swift */,
 				D045EBA7256D3490002822F1 /* Info.plist */,
-				D045EBA4256D3490002822F1 /* TimeSheet.xcdatamodeld */,
+				D09636F3257248FE007310CE /* TimeSheet.xcdatamodeld */,
+				D05DB35D256E3B350005D843 /* InfoPlist.strings */,
+				D05DB351256E36D80005D843 /* Localizable.strings */,
 				D045EB9F256D3490002822F1 /* Preview Content */,
+				D0782AFB2578BF84007A92CB /* LaunchScreen.storyboard */,
 			);
 			path = TimeSheet;
 			sourceTree = "<group>";
@@ -75,9 +482,82 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D045EBB0256D3567002822F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D045EBB3256D3574002822F1 /* CloudKit.framework */,
+				D045EBB1256D3567002822F1 /* StoreKit.framework */,
+				D0254906256F8019002050A0 /* WidgetKit.framework */,
+				D0254908256F8019002050A0 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D05DB354256E370A0005D843 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				D026788425709A5E00A813EC /* mp3 */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		D0ED9C282574A22C00C45EBE /* TimeSheetTomorrowWidget */ = {
+			isa = PBXGroup;
+			children = (
+				D0ED9C292574A22C00C45EBE /* TimeSheetTomorrowWidget.swift */,
+				D0ED9C2B2574A22E00C45EBE /* Assets.xcassets */,
+				D0ED9C2D2574A22E00C45EBE /* Info.plist */,
+			);
+			path = TimeSheetTomorrowWidget;
+			sourceTree = "<group>";
+		};
+		D0ED9C602574DCC000C45EBE /* TimeSheetBirthdayWidget */ = {
+			isa = PBXGroup;
+			children = (
+				D0ED9C612574DCC000C45EBE /* TimeSheetBirthdayWidget.swift */,
+				D0ED9C632574DCC100C45EBE /* Assets.xcassets */,
+				D0ED9C652574DCC100C45EBE /* Info.plist */,
+			);
+			path = TimeSheetBirthdayWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D0254904256F8019002050A0 /* TimeSheetTodoWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0254913256F801C002050A0 /* Build configuration list for PBXNativeTarget "TimeSheetTodoWidgetExtension" */;
+			buildPhases = (
+				D0254901256F8019002050A0 /* Sources */,
+				D0254902256F8019002050A0 /* Frameworks */,
+				D0254903256F8019002050A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeSheetTodoWidgetExtension;
+			productName = TimeSheetTodoWidgetExtension;
+			productReference = D0254905256F8019002050A0 /* TimeSheetTodoWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D025491C256F8033002050A0 /* TimeSheetScheduleWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0254929256F8034002050A0 /* Build configuration list for PBXNativeTarget "TimeSheetScheduleWidgetExtension" */;
+			buildPhases = (
+				D0254919256F8033002050A0 /* Sources */,
+				D025491A256F8033002050A0 /* Frameworks */,
+				D025491B256F8033002050A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeSheetScheduleWidgetExtension;
+			productName = TimeSheetScheduleWidgetExtension;
+			productReference = D025491D256F8033002050A0 /* TimeSheetScheduleWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		D045EB95256D348F002822F1 /* TimeSheet */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D045EBAA256D3490002822F1 /* Build configuration list for PBXNativeTarget "TimeSheet" */;
@@ -85,15 +565,54 @@
 				D045EB92256D348F002822F1 /* Sources */,
 				D045EB93256D348F002822F1 /* Frameworks */,
 				D045EB94256D348F002822F1 /* Resources */,
+				D0254916256F801C002050A0 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D0254911256F801B002050A0 /* PBXTargetDependency */,
+				D0254927256F8033002050A0 /* PBXTargetDependency */,
+				D0ED9C2F2574A22E00C45EBE /* PBXTargetDependency */,
+				D0ED9C672574DCC100C45EBE /* PBXTargetDependency */,
 			);
 			name = TimeSheet;
 			productName = TimeSheet;
 			productReference = D045EB96256D348F002822F1 /* TimeSheet.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D0ED9C242574A22C00C45EBE /* TimeSheetTomorrowWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0ED9C332574A22E00C45EBE /* Build configuration list for PBXNativeTarget "TimeSheetTomorrowWidgetExtension" */;
+			buildPhases = (
+				D0ED9C212574A22C00C45EBE /* Sources */,
+				D0ED9C222574A22C00C45EBE /* Frameworks */,
+				D0ED9C232574A22C00C45EBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeSheetTomorrowWidgetExtension;
+			productName = TimeSheetTomorrowWidgetExtension;
+			productReference = D0ED9C252574A22C00C45EBE /* TimeSheetTomorrowWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D0ED9C5C2574DCC000C45EBE /* TimeSheetBirthdayWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0ED9C692574DCC100C45EBE /* Build configuration list for PBXNativeTarget "TimeSheetBirthdayWidgetExtension" */;
+			buildPhases = (
+				D0ED9C592574DCC000C45EBE /* Sources */,
+				D0ED9C5A2574DCC000C45EBE /* Frameworks */,
+				D0ED9C5B2574DCC000C45EBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeSheetBirthdayWidgetExtension;
+			productName = TimeSheetBirthdayWidgetExtension;
+			productReference = D0ED9C5D2574DCC000C45EBE /* TimeSheetBirthdayWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -104,7 +623,19 @@
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
+					D0254904256F8019002050A0 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					D025491C256F8033002050A0 = {
+						CreatedOnToolsVersion = 12.2;
+					};
 					D045EB95256D348F002822F1 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					D0ED9C242574A22C00C45EBE = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					D0ED9C5C2574DCC000C45EBE = {
 						CreatedOnToolsVersion = 12.2;
 					};
 				};
@@ -116,6 +647,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = D045EB8D256D348F002822F1;
 			productRefGroup = D045EB97256D348F002822F1 /* Products */;
@@ -123,37 +655,359 @@
 			projectRoot = "";
 			targets = (
 				D045EB95256D348F002822F1 /* TimeSheet */,
+				D0254904256F8019002050A0 /* TimeSheetTodoWidgetExtension */,
+				D025491C256F8033002050A0 /* TimeSheetScheduleWidgetExtension */,
+				D0ED9C242574A22C00C45EBE /* TimeSheetTomorrowWidgetExtension */,
+				D0ED9C5C2574DCC000C45EBE /* TimeSheetBirthdayWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D0254903256F8019002050A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0963782257338A5007310CE /* 欢快.caf in Resources */,
+				D0963737257333F5007310CE /* 猫叫.mp3 in Resources */,
+				D096374F257333F5007310CE /* open1.mp3 in Resources */,
+				D0963725257333F5007310CE /* 叮玲玲2.mp3 in Resources */,
+				D096373A257333F5007310CE /* 完成.mp3 in Resources */,
+				D0963764257335EB007310CE /* 乌鸦.mp3 in Resources */,
+				D0963743257333F5007310CE /* 狗叫.mp3 in Resources */,
+				D096377F257338A5007310CE /* 爵士.caf in Resources */,
+				D0963731257333F5007310CE /* 响指.mp3 in Resources */,
+				D096375E257335EB007310CE /* 胜利.mp3 in Resources */,
+				D0963722257333F5007310CE /* pop.mp3 in Resources */,
+				D0963734257333F5007310CE /* 叮玲玲.mp3 in Resources */,
+				D096371C257333F4007310CE /* 默认.mp3 in Resources */,
+				D096377C257338A5007310CE /* 幻想.caf in Resources */,
+				D096376B257336E0007310CE /* 电吉他.caf in Resources */,
+				D0963779257338A5007310CE /* 钢琴.caf in Resources */,
+				D0963740257333F5007310CE /* 打卡.mp3 in Resources */,
+				D096372B257333F5007310CE /* 键盘.mp3 in Resources */,
+				D0963728257333F5007310CE /* xixu.mp3 in Resources */,
+				D0254941256F81CD002050A0 /* Assets.xcassets in Resources */,
+				D0963761257335EB007310CE /* 弹簧.mp3 in Resources */,
+				D0963776257338A5007310CE /* 起床.caf in Resources */,
+				D025490E256F801B002050A0 /* Assets.xcassets in Resources */,
+				D0963749257333F5007310CE /* open2.mp3 in Resources */,
+				D096372E257333F5007310CE /* 生日快乐.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D025491B256F8033002050A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0963783257338A5007310CE /* 欢快.caf in Resources */,
+				D0963738257333F5007310CE /* 猫叫.mp3 in Resources */,
+				D0963750257333F5007310CE /* open1.mp3 in Resources */,
+				D0963726257333F5007310CE /* 叮玲玲2.mp3 in Resources */,
+				D096373B257333F5007310CE /* 完成.mp3 in Resources */,
+				D0963765257335EB007310CE /* 乌鸦.mp3 in Resources */,
+				D0963744257333F5007310CE /* 狗叫.mp3 in Resources */,
+				D0963780257338A5007310CE /* 爵士.caf in Resources */,
+				D0963732257333F5007310CE /* 响指.mp3 in Resources */,
+				D096375F257335EB007310CE /* 胜利.mp3 in Resources */,
+				D0963723257333F5007310CE /* pop.mp3 in Resources */,
+				D0963735257333F5007310CE /* 叮玲玲.mp3 in Resources */,
+				D096371D257333F5007310CE /* 默认.mp3 in Resources */,
+				D096377D257338A5007310CE /* 幻想.caf in Resources */,
+				D096376C257336E0007310CE /* 电吉他.caf in Resources */,
+				D096377A257338A5007310CE /* 钢琴.caf in Resources */,
+				D0963741257333F5007310CE /* 打卡.mp3 in Resources */,
+				D096372C257333F5007310CE /* 键盘.mp3 in Resources */,
+				D0963729257333F5007310CE /* xixu.mp3 in Resources */,
+				D0254945256F81CD002050A0 /* Assets.xcassets in Resources */,
+				D0963762257335EB007310CE /* 弹簧.mp3 in Resources */,
+				D0963777257338A5007310CE /* 起床.caf in Resources */,
+				D0254924256F8033002050A0 /* Assets.xcassets in Resources */,
+				D096374A257333F5007310CE /* open2.mp3 in Resources */,
+				D096372F257333F5007310CE /* 生日快乐.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D045EB94256D348F002822F1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D096377B257338A5007310CE /* 幻想.caf in Resources */,
+				D0963763257335EB007310CE /* 乌鸦.mp3 in Resources */,
 				D045EBA1256D3490002822F1 /* Preview Assets.xcassets in Resources */,
+				D0782AFC2578BF84007A92CB /* LaunchScreen.storyboard in Resources */,
+				D096376A257336E0007310CE /* 电吉他.caf in Resources */,
+				D05DB34F256E36D80005D843 /* Localizable.strings in Resources */,
+				D0963733257333F5007310CE /* 叮玲玲.mp3 in Resources */,
+				D0963721257333F5007310CE /* pop.mp3 in Resources */,
+				D0963760257335EB007310CE /* 弹簧.mp3 in Resources */,
+				D096375D257335EB007310CE /* 胜利.mp3 in Resources */,
+				D0963739257333F5007310CE /* 完成.mp3 in Resources */,
+				D0963727257333F5007310CE /* xixu.mp3 in Resources */,
+				D096374E257333F5007310CE /* open1.mp3 in Resources */,
+				D096371B257333F4007310CE /* 默认.mp3 in Resources */,
+				D096372D257333F5007310CE /* 生日快乐.mp3 in Resources */,
+				D096377E257338A5007310CE /* 爵士.caf in Resources */,
+				D0963742257333F5007310CE /* 狗叫.mp3 in Resources */,
+				D096373F257333F5007310CE /* 打卡.mp3 in Resources */,
+				D0963730257333F5007310CE /* 响指.mp3 in Resources */,
+				D0963781257338A5007310CE /* 欢快.caf in Resources */,
+				D0963736257333F5007310CE /* 猫叫.mp3 in Resources */,
+				D0963724257333F5007310CE /* 叮玲玲2.mp3 in Resources */,
 				D045EB9E256D3490002822F1 /* Assets.xcassets in Resources */,
+				D0963778257338A5007310CE /* 钢琴.caf in Resources */,
+				D0963748257333F5007310CE /* open2.mp3 in Resources */,
+				D096372A257333F5007310CE /* 键盘.mp3 in Resources */,
+				D05DB35B256E3B350005D843 /* InfoPlist.strings in Resources */,
+				D0963775257338A5007310CE /* 起床.caf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0ED9C232574A22C00C45EBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0ED9C4E2574A27C00C45EBE /* Assets.xcassets in Resources */,
+				D0ED9C2C2574A22E00C45EBE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0ED9C5B2574DCC000C45EBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0ED9C7D2574DCDC00C45EBE /* Assets.xcassets in Resources */,
+				D0ED9C642574DCC100C45EBE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D0254901256F8019002050A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D02678AD25709D4900A813EC /* Utils.swift in Sources */,
+				D09636F925732EDE007310CE /* TimeSheet.xcdatamodeld in Sources */,
+				D0254934256F8045002050A0 /* Persistence.swift in Sources */,
+				D025490C256F8019002050A0 /* TimeSheetTodoWidget.swift in Sources */,
+				D025492F256F8041002050A0 /* Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0254919256F8033002050A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D02678B125709D4A00A813EC /* Utils.swift in Sources */,
+				D09636FD25732EDE007310CE /* TimeSheet.xcdatamodeld in Sources */,
+				D0254938256F8045002050A0 /* Persistence.swift in Sources */,
+				D0254922256F8033002050A0 /* TimeSheetScheduleWidget.swift in Sources */,
+				D0254933256F8041002050A0 /* Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D045EB92256D348F002822F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D045EBB7256D37C9002822F1 /* NavigationBarModifier.swift in Sources */,
 				D045EBA3256D3490002822F1 /* Persistence.swift in Sources */,
+				D026788C25709A9F00A813EC /* Utils.swift in Sources */,
 				D045EB9C256D348F002822F1 /* ContentView.swift in Sources */,
-				D045EBA6256D3490002822F1 /* TimeSheet.xcdatamodeld in Sources */,
+				D05DB374256E5B5E0005D843 /* AllRepeatView.swift in Sources */,
+				D068EA9A256E07550041C3CE /* NewTodoView.swift in Sources */,
+				D05DB368256E45560005D843 /* TimeAlertView.swift in Sources */,
+				D04BBD8F256FE713008B7037 /* TagView.swift in Sources */,
+				D0782B192578C298007A92CB /* EditTodoView.swift in Sources */,
+				D05DB371256E5AAD0005D843 /* AllRecycleView.swift in Sources */,
+				D0520EF6256E87D200459B97 /* RepeatTodoView.swift in Sources */,
+				D0782B202578C670007A92CB /* EditRepeatTodoView.swift in Sources */,
+				D02548F9256F7061002050A0 /* AllOverDueNoEndView.swift in Sources */,
+				D02548F6256F67E5002050A0 /* AllOverDueView.swift in Sources */,
+				D045EBC0256D49CE002822F1 /* GearView.swift in Sources */,
+				D05DB362256E44F30005D843 /* Extension.swift in Sources */,
+				D05DB36E256E59590005D843 /* AllScheduleView.swift in Sources */,
+				D05DB36B256E523F0005D843 /* AllTodoView.swift in Sources */,
+				D0ED9C542574C68900C45EBE /* LunarAlertView.swift in Sources */,
+				D0520EF9256E8CE700459B97 /* NewRepeatTodoView.swift in Sources */,
+				D05DB365256E45420005D843 /* DateAlertView.swift in Sources */,
+				D02548FC256F7338002050A0 /* MailView.swift in Sources */,
+				D04BBD94256FE729008B7037 /* TodoItemView.swift in Sources */,
+				D02548FF256F7AD4002050A0 /* BackgroundView.swift in Sources */,
+				D045EBBD256D486E002822F1 /* ToDoView.swift in Sources */,
 				D045EB9A256D348F002822F1 /* TimeSheetApp.swift in Sources */,
+				D09636F5257248FF007310CE /* TimeSheet.xcdatamodeld in Sources */,
+				D05DB377256E5C7A0005D843 /* RecycleTodoView.swift in Sources */,
+				D02548F3256F5F30002050A0 /* CoreDataUtil.swift in Sources */,
+				D045EBBA256D3DD9002822F1 /* DayTodoView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0ED9C212574A22C00C45EBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0ED9C2A2574A22C00C45EBE /* TimeSheetTomorrowWidget.swift in Sources */,
+				D0ED9C492574A27500C45EBE /* TimeSheet.xcdatamodeld in Sources */,
+				D0ED9C442574A27200C45EBE /* Persistence.swift in Sources */,
+				D0ED9C3A2574A26A00C45EBE /* Extension.swift in Sources */,
+				D0ED9C3F2574A26C00C45EBE /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0ED9C592574DCC000C45EBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0ED9C772574DCD400C45EBE /* Extension.swift in Sources */,
+				D0ED9C892574DD2500C45EBE /* TimeSheet.xcdatamodeld in Sources */,
+				D0ED9C832574DCDE00C45EBE /* Persistence.swift in Sources */,
+				D0ED9C622574DCC000C45EBE /* TimeSheetBirthdayWidget.swift in Sources */,
+				D0ED9C712574DCD100C45EBE /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D0254911256F801B002050A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0254904256F8019002050A0 /* TimeSheetTodoWidgetExtension */;
+			targetProxy = D0254910256F801B002050A0 /* PBXContainerItemProxy */;
+		};
+		D0254927256F8033002050A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D025491C256F8033002050A0 /* TimeSheetScheduleWidgetExtension */;
+			targetProxy = D0254926256F8033002050A0 /* PBXContainerItemProxy */;
+		};
+		D0ED9C2F2574A22E00C45EBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0ED9C242574A22C00C45EBE /* TimeSheetTomorrowWidgetExtension */;
+			targetProxy = D0ED9C2E2574A22E00C45EBE /* PBXContainerItemProxy */;
+		};
+		D0ED9C672574DCC100C45EBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0ED9C5C2574DCC000C45EBE /* TimeSheetBirthdayWidgetExtension */;
+			targetProxy = D0ED9C662574DCC100C45EBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D05DB351256E36D80005D843 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D05DB350256E36D80005D843 /* en */,
+				D05DB353256E36DB0005D843 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		D05DB35D256E3B350005D843 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D05DB35C256E3B350005D843 /* en */,
+				D05DB35F256E3B380005D843 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		D0254914256F801C002050A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = TimeSheetTodoWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = L423KMTM9G;
+				INFOPLIST_FILE = TimeSheetTodoWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyufei.app.TimeSheet.TimeSheetTodoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0254915256F801C002050A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = TimeSheetTodoWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = L423KMTM9G;
+				INFOPLIST_FILE = TimeSheetTodoWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyufei.app.TimeSheet.TimeSheetTodoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D025492A256F8034002050A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = TimeSheetScheduleWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = L423KMTM9G;
+				INFOPLIST_FILE = TimeSheetScheduleWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyufei.app.TimeSheet.TimeSheetScheduleWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D025492B256F8034002050A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = TimeSheetScheduleWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = L423KMTM9G;
+				INFOPLIST_FILE = TimeSheetScheduleWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyufei.app.TimeSheet.TimeSheetScheduleWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		D045EBA8256D3490002822F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -273,9 +1127,12 @@
 		D045EBAB256D3490002822F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TimeSheet/TimeSheet.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"TimeSheet/Preview Content\"";
 				DEVELOPMENT_TEAM = L423KMTM9G;
 				ENABLE_PREVIEWS = YES;
@@ -295,9 +1152,12 @@
 		D045EBAC256D3490002822F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TimeSheet/TimeSheet.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"TimeSheet/Preview Content\"";
 				DEVELOPMENT_TEAM = L423KMTM9G;
 				ENABLE_PREVIEWS = YES;
@@ -314,9 +1174,119 @@
 			};
 			name = Release;
 		};
+		D0ED9C312574A22E00C45EBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = TimeSheetTomorrowWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = L423KMTM9G;
+				INFOPLIST_FILE = TimeSheetTomorrowWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyufei.app.TimeSheet.TimeSheetTomorrowWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0ED9C322574A22E00C45EBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = TimeSheetTomorrowWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = L423KMTM9G;
+				INFOPLIST_FILE = TimeSheetTomorrowWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyufei.app.TimeSheet.TimeSheetTomorrowWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D0ED9C6A2574DCC100C45EBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = TimeSheetBirthdayWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = L423KMTM9G;
+				INFOPLIST_FILE = TimeSheetBirthdayWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyufei.app.TimeSheet.TimeSheetBirthdayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0ED9C6B2574DCC100C45EBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = TimeSheetBirthdayWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = L423KMTM9G;
+				INFOPLIST_FILE = TimeSheetBirthdayWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liyufei.app.TimeSheet.TimeSheetBirthdayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D0254913256F801C002050A0 /* Build configuration list for PBXNativeTarget "TimeSheetTodoWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0254914256F801C002050A0 /* Debug */,
+				D0254915256F801C002050A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0254929256F8034002050A0 /* Build configuration list for PBXNativeTarget "TimeSheetScheduleWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D025492A256F8034002050A0 /* Debug */,
+				D025492B256F8034002050A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D045EB91256D348F002822F1 /* Build configuration list for PBXProject "TimeSheet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -335,15 +1305,33 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		D0ED9C332574A22E00C45EBE /* Build configuration list for PBXNativeTarget "TimeSheetTomorrowWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0ED9C312574A22E00C45EBE /* Debug */,
+				D0ED9C322574A22E00C45EBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0ED9C692574DCC100C45EBE /* Build configuration list for PBXNativeTarget "TimeSheetBirthdayWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0ED9C6A2574DCC100C45EBE /* Debug */,
+				D0ED9C6B2574DCC100C45EBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D045EBA4256D3490002822F1 /* TimeSheet.xcdatamodeld */ = {
+		D09636F3257248FE007310CE /* TimeSheet.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				D045EBA5256D3490002822F1 /* TimeSheet.xcdatamodel */,
+				D09636F4257248FE007310CE /* TimeSheet.xcdatamodel */,
 			);
-			currentVersion = D045EBA5256D3490002822F1 /* TimeSheet.xcdatamodel */;
+			currentVersion = D09636F4257248FE007310CE /* TimeSheet.xcdatamodel */;
 			path = TimeSheet.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
